@@ -7,7 +7,7 @@
         margin: 10px;
         font-family: times;
         text-align: justify;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.5;
         color: black;
       }
@@ -83,7 +83,7 @@
       }
       .svr-ctn a{
         font-family: times;
-        font-size: 18px;
+        font-size: 14px;
         width: 90px;
         box-sizing:border-box;
         margin: 10px 0;
