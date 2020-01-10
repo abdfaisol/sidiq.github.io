@@ -9,6 +9,7 @@
         text-align: justify;
         font-size: 18px;
         line-height: 1.5;
+        color: black;
       }
       .post-ctn{
         margin: 10px;
@@ -81,6 +82,8 @@
         border-bottom: 1px solid #f0f0f0;
       }
       .svr-ctn a{
+        font-family: times;
+        font-size: 18px;
         width: 90px;
         box-sizing:border-box;
         margin: 10px 0;
