@@ -7,7 +7,7 @@
         margin: 10px;
       }
 
-      .post-ctn p{
+      .post-ctn p, .post-ctn td{
         margin: 10px;
         font-family: Caslon, Georgia,sans-serif;
         text-align: justify;
@@ -15,12 +15,7 @@
         line-height: 1.5;
         color: black;
       }
-      .post-ctn a{
-        font-family: Caslon, Georgia,sans-serif;
-        font-size: 18px;
-        line-height: 1.5;
-        color: black;
-      }
+      
       .ctn-cover{
         width: 100%;
         height: auto;
@@ -100,6 +95,9 @@
         border-radius: 5px;
         margin: 10px 10px;
         max-width: 150px;
+        font-family: Caslon, Georgia,sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
       }
 
       /*Setting Gallery*/
