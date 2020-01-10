@@ -13,6 +13,13 @@
         text-align: justify;
         font-size: 18px;
         line-height: 1.5;
+        color: black;
+      }
+      .post-ctn a{
+        font-family: Caslon, Georgia,sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        color: black;
       }
       .ctn-cover{
         width: 100%;
