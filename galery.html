@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://abdfaisol.github.io/sidiq.github.io/dropcap.js"></script>
+    <style media="screen">
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      .post{
+        width: 100%;
+        max-width: 900px;
+        height: 100%;
+        padding: 25px 0;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /*Setting Post Pribadi*/
+      .sinopsis{
+        margin-top: 5px;
+        display: block;
+      }
+      .sinopsis p{
+        margin: 10px;
+        font-family: times;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .post-ctn{
+        margin: 10px;
+      }
+      .ctn-cover{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .ctn-cover table, tr, td{
+        border-collapse: collapse;
+        vertical-align: top;
+      }
+      .ctn-cover td{padding: 5px}
+      .cover{
+        width: 150px;
+        height: 100%;
+        margin-right: 10px;
+      }
+      @media screen and (max-width: 750px){
+        .ctn-cover{
+          justify-content: center;
+        }
+        .cover{
+          margin-bottom: 20px;
+        }
+      }
+      /*Setting Server*/
+      .svr{
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-between;
+        align-items: stretch;
+      }
+
+      .svr button{
+        flex-grow: 1;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid black;
+        margin-bottom: -1px;
+        background-color: white;
+        color: black;
+        padding: 10px 0;
+        cursor: pointer;
+      }
+      .inactive{
+        border-color:blue;
+      }
+
+      .svr button:focus{
+        border-bottom: 1px solid black;
+        outline: none;
+      }
+
+      .svr-ctn{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        display: flex;
+        width: inherit;
+        flex-flow: row wrap;
+        justify-content:start;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .svr-ctn a{
+        width: 90px;
+        box-sizing:border-box;
+        margin: 10px 0;
+        padding: 5px 5px;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        border: 1px solid #282C34;
+        border-radius: 5px;
+        margin: 10px 10px;
+        max-width: 150px;
+      }
+      @media screen and (max-width: 700px){
+        .post p{font-size: 18px;}
+      }
+      /*Setting Gallery*/
+      .gallery{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px 10px;
+        margin: 10px 10px;
+      }
+      .cnt-gallery{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+      .gallery img{
+        width: 100%;
+      }
+      .gallery img:hover{
+        opacity: 0.5;
+      }
+      .cnt-gallery .blur{
+        position: absolute;
+        left: 50%;
+        top: 95%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+        filter: blur(10px);
+        width: 100%;
+        padding-bottom: 30px;
+        height: 50px;
+      }
+      .cnt-gallery button{
+        position: absolute;
+        left: 50%;
+        top: 95.66%;
+        transform: translate(-50%,-50%);
+        border: none;
+        background-color: dodgerblue;
+        padding: 5px 10px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="post">
+      <div class="post-ctn">
+      <div class="ctn-cover">
+        <img class="cover" src="https://abdfaisol.github.io/sidiq.github.io/pic.jpg" alt="">
+        <table>
+          <tr>
+            <td>Judul</td>
+            <td>Tomodachi no Imouto ga Ore ni Dake Uzai</td>
+          </tr>
+          <tr>
+            <td>Genre</td>
+            <td>Comedy, Drama, Romance, School Life</td>
+          </tr>
+          <tr>
+            <td>Penulis</td>
+            <td>Mikawa Ghost</td>
+          </tr>
+          <tr>
+            <td>Sumber</td>
+            <td>Yukinovel</td>
+          </tr>
+          <tr>
+            <td>Level</td>
+            <td>Sangat menarik!</td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <p>Sinopsis</p>
+    <div class="sinopsis">
+      <p>
+        <span id="dropcap">A </span>ku tidak butuh dengan namannya hubungan dekat. Apalagi aku saat ini tidak berkeinginan untuk memiliki pacar dan yang aku butuhkan adalah satu teman yang memiliki nilai bagiku. Sejak aku membuang masa mudaku demi efisiensi, namun ada satu orang yang terus masuk di kamar tidurku. Dia adalah Kohinata Iroha. Dia itu bukan adik perempuanku ataupun temanku. Dia tidak lebih dari junior yang sangat menganggu dan menyebalkan. Btw, dia itu adik perempuan temanku. <br><br>
+&nbsp &nbsp “Senpai, ayo kita berkencan ~! Apa kamu pikir aku akan mengatakan itu ~?” <br><br>
+&nbsp &nbsp Didalam aliran darah mungkin mengalirkan minuman energi di nadinya. Dia terus duduk di tempat tidurku, dan ia mencoba merayuku dengan metode apapun yang ia bisa gunakan. Aku tidak terlalu memedulikannya karena hari ini aku sibuk. <br><br>
+&nbsp &nbsp Jika kamu bertanya mengapa orang – orang melihatku dengan tatapan iri, itu karena Iroha adalah murid yang populer. Dia adalah siswa yang berprestasi dengan nilai tertinggi di setiap tes dan ia dikenal baik kepada siapapun yang ia temui. <br><br>
+&nbsp &nbsp –– Hei, kenapa kau sangat menjengkelkan ketika bersamaku???
+  </p>
+    </div>
+    <br>
+    <div class="svr">
+      <button class="server" id="tab1" onclick="sopen(event,'s1')">Google Drive</button>
+      <button class="server" id="tab2" onclick="sopen(event,'s2')">Zippy</button>
+      <button class="server" id="tab3" onclick="sopen(event,'s3')">Github</button>
+      <button class="server" id="tab4" onclick="sopen(event,'s4')">Mega</button>
+    </div>
+    <div class="svr-ctn" id="tab1c">
+      <a href="">Volume 1</a>
+      <a href="">Volume 2</a>
+      <a href="">Volume 3</a>
+      <a href="">Volume 4</a>
+      <a href="">Volume 5</a>
+      <a href="">Volume 6</a>
+      <a href="">Volume 100</a>
+      <a href="">Volume 200</a>
+      <a href="">Volume 900</a>
+      <a href="">Volume 910</a>
+    </div>
+    <div class="svr-ctn" id="tab2c">
+      <a href="">Volume 1</a>
+      <a href="">Volume 2</a>
+      <a href="">Volume 3</a>
+      <a href="">Volume 4</a>
+      <a href="">Volume 5</a>
+    </div>
+    <div class="svr-ctn" id="tab3c">
+      <a href="">Volume 100</a>
+      <a href="">Volume 200</a>
+      <a href="">Volume 900</a>
+      <a href="">Volume 910</a>
+    </div>
+    <div class="svr-ctn" id="tab4c">
+      <a href="">Volume 1</a>
+      <a href="">Volume 2</a>
+    </div>
+    <br>
+    <br>
+    <script>
+      var dropcap = document.getElementById("dropcap");
+      window.Dropcap.layout(dropcap,2);
+    </script>
+    <script>
+    $(document).ready(function() {
+      $("button.server:not(:first)").css("border-color","#f0f0f0");
+      $("button.server:not(:first)").css("color","gray");
+      $("button.server:not(:first)").addClass('inactive');
+      $(".svr-ctn").hide();
+      $(".svr-ctn:first").show();
+      $('button.server').click(function(){
+          var t = $(this).attr('id');
+      if($(this).hasClass('inactive')){ //this is the start of our condition
+          $('button.server').addClass('inactive');
+          $('button.server').css("border-color","#f0f0f0");
+          $('button.server').css("color","gray");
+          $('button.server').css("background-color","white");
+          $(this).removeClass('inactive');
+          $(this).css("border-color","black");
+          $(this).css("color","black");
+          $(this).css("background-color","#f0f0f0");
+
+          $(".svr-ctn").hide();
+          $('#'+ t + 'c').fadeIn();
+       }
+      });
+    });
+    </script>
+      <div class="cnt-gallery">
+      <div class="gallery">
+        <img src="https://abdfaisol.github.io/sidiq.github.io/img/1 (1).jpg" alt="">
+        <img src="https://abdfaisol.github.io/sidiq.github.io/img/2.jpg" alt="">
+        <img src="https://abdfaisol.github.io/sidiq.github.io/img/9.jpg" alt="">
+        <img src="https://abdfaisol.github.io/sidiq.github.io/img/4.jpg" alt="">
+        <img src="https://abdfaisol.github.io/sidiq.github.io/img/5.jpg" alt="">
+        <img src="https://abdfaisol.github.io/sidiq.github.io/img/10.jpg" alt="">
+        <img src="https://abdfaisol.github.io/sidiq.github.io/img/103.jpg" alt="">
+        <img src="https://abdfaisol.github.io/sidiq.github.io/img/8.jpg" alt="">
+        <img src="https://abdfaisol.github.io/sidiq.github.io/img/3.jpg" alt="">
+      </div>
+      <div class="blur"></div>
+      <button class="show-gel">Lihat lebih banyak</button>
+    </div>
+
+    </div>
+    <script>
+      $(document).ready(function(){
+        var t1 = $('.gallery img:first').height();
+        var t2 = $('.gallery img:gt(1)').height();
+        var t3 = $('.gallery img:gt(2)').height();
+        var num = [t1,t2,t3];
+        var big = Math.max.apply(null, num)+100;
+        $('.cnt-gallery').height(big);
+
+        $('.gallery img').click(function(){
+            var url = $(this).attr('src');
+            window.open("file:///C:/Users/Asus/Documents/Website/CSS/blog/"+url,"_blank")
+        });
+        $('.show-gel').click(function(){
+            $('.show-gel').hide();
+            $('.blur').hide();
+            $('.cnt-gallery').css("height","100%");
+        });
+      });
+    </script>
+  </body>
+</html>
