@@ -17,7 +17,7 @@ function loophalaman(banyakdata) {
     akhir = mulai + numshowpage - 1;
     if (akhir > maksimal) akhir = maksimal;
     var prevnomer = parseInt(nomerhal) - 1;
-    if (nomerhal >= 1) {
+    if (nomerhal > 1) {
         if (nomerhal == 2) {
             if(nomerhal == 1){
                 html += '<span class="showpage cek">' + upPageWord + '</a></span>'
@@ -31,7 +31,7 @@ function loophalaman(banyakdata) {
             
         } else {
             if (jenis == "page") {
-                html += '<span class="showpageNum toko"><a href="#" onclick="redirectpage(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
+                html += '<span class="showpageNum toko" id="disable_efect"><a href="#" onclick="redirectpage(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
             } else {
                 html += '<span class="showpageNum sebelah"><a href="#" onclick="redirectlabel(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
             }
