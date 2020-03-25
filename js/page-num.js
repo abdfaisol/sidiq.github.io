@@ -18,6 +18,7 @@ var nopage;
         if (akhir > maksimal) akhir = maksimal;
         var prevnomer = parseInt(nomerhal) - 1;
         if (nomerhal >= 1) {
+            if (nomerhal == 2) {
                 if(nomerhal == 1){
                     html += '<span id="disable_efect">' + upPageWord + '</span>'
                 }else{
