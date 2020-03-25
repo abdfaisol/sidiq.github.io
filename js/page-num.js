@@ -1,4 +1,4 @@
-var nopage;
+    var nopage;
     var jenis;
     var nomerhal;
     var lblname1;
@@ -20,7 +20,7 @@ var nopage;
         if (nomerhal >= 1) {
             if (nomerhal == 2) {
                 if(nomerhal == 1){
-                    html += '<span id="disable_efect">' + upPageWord + '</span>'
+                    html += '<span class="showpage sek">' + upPageWord + '</span>'
                 }else{
                     if (jenis == "page") {
                         html += '<span class="showpage"><a href="' + home_page + '">' + upPageWord + '</a></span>'
@@ -31,9 +31,9 @@ var nopage;
                 
             } else {
                 if (jenis == "page") {
-                    html += '<span class="showpageNum sek"><a href="#" onclick="redirectpage(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
+                    html += '<span class="showpageNum tak"><a href="#" onclick="redirectpage(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
                 } else {
-                    html += '<span class="showpageNum tak_coba"><a href="#" onclick="redirectlabel(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
+                    html += '<span class="showpageNum cobai"><a href="#" onclick="redirectlabel(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
                 }
             }
         }
