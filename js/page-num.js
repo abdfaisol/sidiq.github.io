@@ -18,7 +18,7 @@ function loophalaman(banyakdata) {
     if (akhir > maksimal) akhir = maksimal;
     var prevnomer = parseInt(nomerhal) - 1;
     if (nomerhal == 1){
-        html += '<span class="disable_efec">' + upPageWord + '</span>'
+        html += '<span class="disable_efect">' + upPageWord + '</span>'
     }
     if (nomerhal > 1) {
         if (nomerhal == 2) {
