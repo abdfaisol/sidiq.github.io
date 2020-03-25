@@ -79,6 +79,9 @@ function loophalaman(banyakdata) {
             html += '<span class="showpageNum"><a href="#" onclick="redirectlabel(' + nextnomer + ');return false">' + downPageWord + '</a></span>'
         }
     }
+    if (nomerhal == maksimal){
+        html += '<span class="disable_efect">' + downPageWord + '</span>'
+    }
     var pageArea = document.getElementsByName("pageArea");
     var blogPager = document.getElementById("blog-pager");
     for (var p = 0; p < pageArea.length; p++) {
