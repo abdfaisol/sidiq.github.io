@@ -16,7 +16,6 @@ var nopage;
         if (maksimal - 1 == banyakdata / postperpage) maksimal = maksimal - 1;
         akhir = mulai + numshowpage - 1;
         if (akhir > maksimal) akhir = maksimal;
-        html += "<span class='showpageOf'>Page " + nomerhal + ' of ' + maksimal + "</span>";
         var prevnomer = parseInt(nomerhal) - 1;
         if (nomerhal >= 1) {
             if (nomerhal == 2) {
