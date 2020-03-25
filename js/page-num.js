@@ -16,11 +16,12 @@
         if (maksimal - 1 == banyakdata / postperpage) maksimal = maksimal - 1;
         akhir = mulai + numshowpage - 1;
         if (akhir > maksimal) akhir = maksimal;
+        html += "<span class='showpageOf'>Page " + nomerhal + ' of ' + maksimal + "</span>";
         var prevnomer = parseInt(nomerhal) - 1;
         if (nomerhal >= 1) {
             if (nomerhal == 2) {
                 if(nomerhal == 1){
-                    html += '<span class="showpage sek">' + upPageWord + '</span>'
+                    html += '<span class="showpage">' + upPageWord + '</span>'
                 }else{
                     if (jenis == "page") {
                         html += '<span class="showpage"><a href="' + home_page + '">' + upPageWord + '</a></span>'
@@ -31,9 +32,9 @@
                 
             } else {
                 if (jenis == "page") {
-                    html += '<span class="showpageNum tak"><a href="#" onclick="redirectpage(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
+                    html += '<span class="showpageNum"><a href="#" onclick="redirectpage(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
                 } else {
-                    html += '<span class="showpageNum cobai"><a href="#" onclick="redirectlabel(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
+                    html += '<span class="showpageNum"><a href="#" onclick="redirectlabel(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
                 }
             }
         }
