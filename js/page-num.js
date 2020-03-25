@@ -20,7 +20,7 @@ var nopage;
         if (nomerhal >= 1) {
             if (nomerhal == 2) {
                 if(nomerhal == 1){
-                    html += '<span class="showpage">' + upPageWord + '</span>'
+                    html += '<span class="showpage" id="disable_efect">' + upPageWord + '</span>'
                 }else{
                     if (jenis == "page") {
                         html += '<span class="showpage"><a href="' + home_page + '">' + upPageWord + '</a></span>'
