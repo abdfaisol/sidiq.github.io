@@ -1,3 +1,11 @@
+.piwrapper{
+	width: 100%;
+	min-height: 250px;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .index{
 	max-width: 500px;
 	width: 350px;
@@ -5,6 +13,7 @@
 	padding: 15px;
 	position: relative;
 	overflow: hidden;
+	margin: 0 15px;
 	font-family: 'Roboto', sans-serif;
 }
 .index p{padding-bottom: 15px}
