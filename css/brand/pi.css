@@ -1,0 +1,48 @@
+.index{
+	max-width: 500px;
+	width: 350px;
+	border: 1px solid #cecece;
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+.index p{padding-bottom: 15px}
+.index ul{padding: 0; margin: 0;}
+.index ul li{
+	list-style: none;
+	padding: 15px 0
+}
+.index-menu {position: relative;;
+border-top: 1px solid #C0C0C0;
+}
+.index-menu li{cursor: pointer}
+.mn-index ul{
+width: 100%;
+}
+.index-menu li i{float: right; margin: 0 25px;}
+.index-menu li ul li i{ float: left; margin: 0; margin-right: 25px; }
+.index-menu .mn_index{
+display: none;
+background-color: white;
+}
+.index-left{
+  animation-name: index-left;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes index-left {
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(0%);}
+}
+.index-right{
+  animation-name: index-right;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes index-right {
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(100%);}
+}
