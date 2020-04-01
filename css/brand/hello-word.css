@@ -1,0 +1,342 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+button{border: none;}
+button:focus{
+  outline: none;
+}
+a{color: white}
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.nav--i{
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.menu--bar{
+  width: 50px;
+  height: 100%;
+  display: none;
+}
+.menu--bar button{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  font-size: 18px;
+}
+.product{
+  height: 100%;
+  width: 150px;
+  display: flex;
+  margin: 0 10px;
+}
+.logo {
+  flex-grow: 1;
+  margin: 5px;
+  border-radius: 5vw;
+  display: flex;
+}
+.product-title{
+  flex-grow: 1;
+}
+.product-title div{
+  background-color: white;
+  height: 100%;
+  margin-left: 5px;
+  font-family: arial;
+  font-size: 18px;
+}
+.product--logo{
+  height: 100%;
+  width: auto;
+  max-width: 50px;
+}
+.product--logo img{
+  width: auto;
+  height: 100%;
+}
+.nav--li{
+  flex-grow: 1;
+  margin: 5px 0;
+}
+.nav--flex{
+  display: flex;
+  height: 100%;
+}
+.nav--item{
+  height: 100%;
+  margin: 0 10px; 
+  color: black;
+}
+.relative{position: relative;}
+.nav--fitur{
+  width: 33.33%;
+  min-width: 33.33%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+.wrp--nav{
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+.src--fitur{
+  flex-grow: 1;
+  background-color: Lavender;
+  border-radius: 0.33vw;
+  overflow: hidden;
+}
+.src--fitur button{
+  width: 50px;background-color: rgba(0,0,0,0);
+  padding: 0 10px;
+}
+.src--fitur input{
+  flex-grow: 1;
+  font-family: arial;
+  font-size:14px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+}
+input:focus{
+  outline: none;
+}
+
+.f-c--margin{
+  margin-left: auto;
+  margin-right: auto;
+}
+.full-w{
+  width: 100%;
+}
+.full-w-ani{
+  animation-name: full-w;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.back-w-ani{
+  animation-name: back-w;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes full-w {
+  0%{width: 33.33%;}
+  100%{width: 100%;}
+}
+@keyframes back-w {
+  0%{width: 100%}
+  100%{width: 33.33%;}
+}
+.post__w{
+  width: 90%;
+  max-width: 1250px;
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+.post--m{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow:  3px 3px 12px #d9d9d9,-3px -3px 12px #ffffff;
+  padding: 15px;
+}
+.widget--t{
+  max-width: 900px;
+  height: 100px;
+  margin-top: 10px;
+  background-color: DimGray;
+}
+.wrap-post{
+  height: 100%;
+  min-height: 600px;
+  margin-top: 25px;
+}
+.ads-bottom{
+  height: 100%;
+  padding: 25px 0;
+  margin: 25px 0;
+}
+.flex{
+  display: flex
+}
+.spc--bet{
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flex-al-cen{align-items: center;}
+.flex-all-cen{align-items: center;justify-content: center}
+.ads-250{
+  height: 250px;
+  width: 250px;
+  background-color: lavender;
+  margin: 15px 15px;
+}
+.fot-cpy{
+  background-color: #ffffff
+}
+.mn-flow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  z-index: 3
+}
+
+.mn-s-flow{
+  position: relative;
+}
+#left{left: 0}#right{right: 0}
+.mn-flow-item{
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+}
+.mn-flow-item li{
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px;
+  color: #757575;
+  padding: 20px;
+  border-bottom: 1px solid #dadce0;
+}
+#animated-left2right{
+  animation-name: slide2right;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes slide2right {
+  0%{transform: translateX(-100%);}
+  100%{transform: translateX(0%);}
+}
+#animated-right2left{
+  animation-name: slide2left;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes slide2left {
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(-100%);}
+}
+#animated-left2right-r{
+  animation-name: slide2right-r;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes slide2right-r {
+  0%{transform: translateX(0%);}
+  100%{transform: translateX(100%);}
+}
+
+#animated-right2left-r{
+  animation-name: slide2left-r;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  right: 0;
+}
+@keyframes slide2left-r {
+  0%{transform: translateX(100%);}
+  100%{transform: translateX(0%);}
+}
+
+.msg{
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+.msg-exit{
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+  transform: translateX(-50%);
+  background:rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.full-h{height: 100%;}
+.rlv{position: relative;
+  background-color: white;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 0.5vw;
+  }
+#zoom-in{
+  animation-name: zoom-in;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom-in {
+  0%{transform: scale(0);}
+  100%{transform: scale(1);}
+}
+#zoom-out{
+  animation-name: zoom-out;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes zoom-out {
+  0%{transform: scale(1);}
+  100%{transform: scale(0);}
+}
+.coba{
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+}
+.flow-bg{
+  position: absolute;
+  top: 150px;
+  left: 0;
+}
+.rgt{right: 0}.lft{left: 0}.mobile{position: relative;}
+.tl_m{
+  padding: 15px 0;
+  text-align: center;
+}
+.tl_m h1{
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.tl_m p{
+  font-style: italic;
+  font-family: serif;
+}
+

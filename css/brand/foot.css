@@ -1,0 +1,24 @@
+.msg__1{
+  width: 43.33%;
+  max-width: 500px;
+}
+.msg__1 p{margin: 25px;font-family: 'Roboto', sans-serif;}
+.msg__1 button{margin: 0 0 25px 25px}
+.sosmed{
+  flex-grow: 1;
+  text-align: right; 
+}
+.foot4{flex-wrap: wrap-reverse;
+  margin: 0 25px;
+  padding: 25px 0;
+  font-family: 'Roboto', sans-serif;
+  border-top: 1px solid #C0C0C0; 
+  flex-grow: 1;
+}
+.foot4 a{margin: 0 15px; color: #C0C0C0}
+
+
+.btn_default{color: MediumSlateBlue; padding: 10px; font-size: 14px; border-radius: 5%; background-color: rgba(0,0,0,0);font-weight: bold;}
+.btn_default:hover{
+  background-color: rgba(0,0,205,0.1);
+}

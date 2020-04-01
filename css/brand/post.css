@@ -1,0 +1,194 @@
+.ipost{
+  width: 23.33%; background-color: white;margin: 10px 0;
+}
+.ipost img{
+  width: 100%;
+  height: auto;
+}
+.cov-ipost{
+  max-height: 200px;
+  overflow: hidden;
+}
+.ipost .dsk{color: black; margin-top: 25px;}
+.ipost .dskl{color: #7D758E; font-size: 16px; font-weight: lighter;}
+.ipost .ttl{
+  font-size: 20px;
+  font-family: arial;
+  margin: 5px 0;
+}
+.three__col{margin: 10px 5%}
+@media screen and (max-width: 860px) {
+  .ipost{
+    width: 33.33%;
+  }
+  .three__col{margin: 10px 5%}
+  .nav--li, .set{display: none}
+  .menu--bar{display: block;}
+  .mobile{position: static}
+  .msg___2{flex-direction: column;}
+  .msg___2 img{max-height: 50px; width: auto;}
+  .msg___2 a{margin: 25px}
+  .mn-flow-item{width: 50%}
+  .header_post{flex-flow: row wrap; align-items: center;}
+  .header_post .qoute{margin-top: 25px; 
+    margin-left: 0px !important
+  }
+}
+@media screen and (max-width: 600px) {
+  .ipost{
+    width: 100%;
+  }
+  .three__col{margin: 10px}
+}
+@media screen and (max-width: 500px) {
+  .post--m{box-shadow: none}
+  .post__w{width: 100%}
+  .table-content{margin: 15px;}
+  .msg__1{width: 100% !important}
+}
+
+.dsk a{color: MediumSlateBlue; }
+.dsk a:hover{color: MediumSlateBlue;}
+.dsk button{color: MediumSlateBlue; padding: 10px; font-size: 14px; border-radius: 5%; 
+  margin: 15px 0; background-color: rgba(0,0,0,0);}
+.dsk button:hover{
+  background-color: rgba(0,0,205,0.1);
+}
+.post_art{
+  flex-grow: 1;
+}
+.post_art p{
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+.header_post{
+  display: flex;
+  justify-content: center;
+}
+.header_post img{
+  height: 350px;
+  width: auto;
+  box-shadow:  3px 3px 12px #d9d9d9,-3px -3px 12px #ffffff;
+}
+.header_post .qoute{
+  flex-grow: 1;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  box-shadow:  3px 3px 12px #d9d9d9,-3px -3px 12px #ffffff;
+  padding: 15px;
+}
+.que{
+  font-size: 35px;
+  color: gray
+}
+.__content{
+  flex-grow: 1;
+  display:flex;
+}._p{
+width: 90%;
+margin: auto;
+}
+._p .line{
+  width: 50%;
+  border-top: 1px solid gray;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+._p p{
+  text-align: center;
+font-family: serif;
+font-size: 18px;
+color: black
+}
+.table-content {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  box-shadow:  3px 3px 12px #d9d9d9,-3px -3px 12px #ffffff;
+}
+.table-content ul li{
+  padding: 15px 25px
+}
+.table-content ul ul{
+  padding: 15px 35px;
+  background-color: #f7f7f7;
+  display: none;
+}
+#num{box-sizing: border-box;}
+
+#article{line-height: 300%; color: black; word-spacing: 0.1em}
+#article p{
+  font-family: 'Roboto Slab', serif;
+  text-indent: 2em;
+}
+#article img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.illustrasi{
+  background-color: black;
+  margin: 15px 0;
+}
+#roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Style button page*/
+.wrap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  
+}
+.main_page{
+  flex-grow: 1;
+  background-color: white;
+  text-align: center;
+  display: flex;align-items: center;justify-content: center;flex-flow: row wrap;
+}
+.main_page button{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 15px 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  background: #ffffff;
+  /*box-shadow:  3px 3px 12px #d9d9d9,-3px -3px 12px #ffffff;*/
+
+}
+.main_page button:focus{
+  border: 1px solid #7B68EE;
+  background: #7B68EE;
+  color: white;
+  /*box-shadow:  inset 3px 3px 12px #d9d9d9,inset -3px -3px 12px #ffffff;*/
+}
+.func-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 28px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+}
+.func-top:focus i{
+  animation-name: func;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-direction: reverse;
+}
+@keyframes func {
+  0%{transform: translateY(0%);}
+  100%{transform: translateY(-50%);}
+}
