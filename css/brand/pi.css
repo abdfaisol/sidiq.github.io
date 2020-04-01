@@ -16,20 +16,20 @@
 	margin: 0 15px;
 	font-family: 'Roboto', sans-serif;
 }
-.index p{padding-bottom: 15px;!important}
-.index ul{padding: 0;!important
-	margin: 0;!important
+.index p{padding-bottom: 15px !important;}
+.index ul{padding: 0 !important;
+	margin: 0 !important;
 }
 .index ul li{
-	list-style: none;!important
-	padding: 15px 0;!important
+	list-style: none ;
+	padding: 15px 0!important;
 }
 .index-menu {position: relative;;
 border-top: 1px solid #C0C0C0;
 }
 .index-menu li{cursor: pointer}
 .mn-index ul{
-width: 100%;!important
+width: 100% !important;
 }
 .index-menu li i{float: right; margin: 0 25px;}
 .index-menu li ul li i{ float: left; margin: 0; margin-right: 25px; }
