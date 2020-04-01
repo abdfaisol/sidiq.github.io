@@ -103,3 +103,20 @@ $(".post").each(function(){
 $(".func-top").click(function(){
 	$("html, body").animate({scrollTop: 0}, 500);
 });
+$(".vol").click(function(){
+	var target = "#vol"+ (parseInt($(".vol").index(this))+1).toString();
+	
+	$(".mn_index").show();
+	$(".mn_index ul").hide();
+	$(target).show();
+	$(".mn_index").removeClass("index-right");
+	$(".mn_index").addClass("index-left");
+	$(".index-menu").css("overflow-y","hidden")
+});
+$(".beka").click(function(){
+	$(".mn_index").removeClass("index-left");
+	$(".mn_index").addClass("index-right");
+	$(".mn_index").delay(600).hide(0);
+	$(this).parent().delay(600).hide(0);
+	$(".index-menu").css("overflow-y","auto")
+});
