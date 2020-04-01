@@ -8,7 +8,8 @@
 }
 .index{
 	max-width: 500px;
-	width: 350px;
+	width: 95%;
+	border-radius: 0.5em;
 	border: 1px solid #cecece;
 	padding: 15px;
 	position: relative;
@@ -16,7 +17,7 @@
 	margin: 0 15px;
 	font-family: 'Roboto', sans-serif;
 }
-.index p{padding-bottom: 15px !important;}
+.index p{padding-bottom: 10px !important;font-weight: bold}
 .index ul{padding: 0 !important;
 	margin: 0 !important;
 }
