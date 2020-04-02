@@ -122,10 +122,11 @@ color: black
 }
 #num{box-sizing: border-box;}
 
-#article{line-height: 300%; color: black; word-spacing: 0.1em}
+#article{line-height: 200%; color: black; word-spacing: 0.1em}
 #article p{
   font-family: 'Roboto Slab', serif;
   text-indent: 2em;
+  margin: 2em 0;
 }
 #article img{
   width: 100%;
