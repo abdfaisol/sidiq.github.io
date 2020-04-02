@@ -17,7 +17,7 @@
 	margin: 0 15px;
 	font-family: 'Roboto', sans-serif;
 }
-.index p{padding: 5px 0 !important;font-weight: bold;margin:0 !important}
+.index p{padding: 5px 0 !important;font-weight: bold;margin:0 !important;text-indent: 0;}
 .index ul{padding: 0 !important;
 	margin: 0 !important;
 }
