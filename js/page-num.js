@@ -23,64 +23,64 @@ function loophalaman(banyakdata) {
     if (nomerhal > 1) {
         if (nomerhal == 2) {
             if(nomerhal == 1){
-                html += '<span class="showpage cek">' + upPageWord + '</a></span>'
+                html += '<span>' + upPageWord + '</span></a>'
             }else{
                 if (jenis == "page") {
-                    html += '<span class="showpage"><a href="' + home_page + '">' + upPageWord + '</a></span>'
+                    html += '<a href="' + home_page + '"><span>' + upPageWord + '</span></a>'
                 } else {
-                    html += '<span class="showpageNum"><a href="/search/label/' + lblname1 + '?max-results=' + postperpage + '">' + upPageWord + '</a></span>'
+                    html += '<a href="/search/label/' + lblname1 + '?max-results=' + postperpage + '"><span>' + upPageWord + '</span></a>'
                 }  
             }
             
         } else {
             if (jenis == "page") {
-                html += '<span class="showpageNum toko" ><a href="#" onclick="redirectpage(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
+                html += '<a href="#" onclick="redirectpage(' + prevnomer + ');return false"><span>' + upPageWord + '</span></a>'
             } else {
-                html += '<span class="showpageNum sebelah"><a href="#" onclick="redirectlabel(' + prevnomer + ');return false">' + upPageWord + '</a></span>'
+                html += '<a href="#" onclick="redirectlabel(' + prevnomer + ');return false"><span>' + upPageWord + '</span></a>'
             }
         }
     }
     if (mulai > 1) {
         if (jenis == "page") {
-            html += '<span class="showpageNum"><a href="' + home_page + '">1</a></span>'
+            html += '<a href="' + home_page + '"><span>1</span></a>'
         } else {
-            html += '<span class="showpageNum"><a href="/search/label/' + lblname1 + '?max-results=' + postperpage + '">1</a></span>'
+            html += '<a href="/search/label/' + lblname1 + '?max-results=' + postperpage + '"><span>1</span></a>'
         }
     }
     for (var jj = mulai; jj <= akhir; jj++) {
         if (nomerhal == jj) {
-            html += '<span class="showpagePoint">' + jj + '</span>'
+            html += '<span id="disabled">' + jj + '</span>'
         } else if (jj == 1) {
             if (jenis == "page") {
-                html += '<span class="showpageNum"><a href="' + home_page + '">1</a></span>'
+                html += '<a href="' + home_page + '"><span>1</span></a>'
             } else {
-                html += '<span class="showpageNum"><a href="/search/label/' + lblname1 + '?max-results=' + postperpage + '">1</a></span>'
+                html += '<a href="/search/label/' + lblname1 + '?max-results=' + postperpage + '"><span>1</span></a>'
             }
         } else {
             if (jenis == "page") {
-                html += '<span class="showpageNum"><a href="#" onclick="redirectpage(' + jj + ');return false">' + jj + '</a></span>'
+                html += '<a href="#" onclick="redirectpage(' + jj + ');return false"><span>' + jj + '</span></a>'
             } else {
-                html += '<span class="showpageNum"><a href="#" onclick="redirectlabel(' + jj + ');return false">' + jj + '</a></span>'
+                html += '<a href="#" onclick="redirectlabel(' + jj + ');return false"><span>' + jj + '</span></a>'
             }
         }
     }
     if (akhir < maksimal) {
         if (jenis == "page") {
-            html += '<span class="showpageNum"><a href="#" onclick="redirectpage(' + maksimal + ');return false">' + maksimal + '</a></span>'
+            html += '<a href="#" onclick="redirectpage(' + maksimal + ');return false"><span>' + maksimal + '</span></a>'
         } else {
-            html += '<span class="showpageNum"><a href="#" onclick="redirectlabel(' + maksimal + ');return false">' + maksimal + '</a></span>'
+            html += '<a href="#" onclick="redirectlabel(' + maksimal + ');return false"><span>' + maksimal + '</span></a>'
         }
     }
     var nextnomer = parseInt(nomerhal) + 1;
     if (nomerhal < maksimal) {
         if (jenis == "page") {
-            html += '<span class="showpageNum"><a href="#" onclick="redirectpage(' + nextnomer + ');return false">' + downPageWord + '</a></span>'
+            html += '<a href="#" onclick="redirectpage(' + nextnomer + ');return false"><span>' + downPageWord + '</span></a>'
         } else {
-            html += '<span class="showpageNum"><a href="#" onclick="redirectlabel(' + nextnomer + ');return false">' + downPageWord + '</a></span>'
+            html += '<a href="#" onclick="redirectlabel(' + nextnomer + ');return false"><span>' + downPageWord + '</span></a>'
         }
     }
     if (nomerhal == maksimal){
-        html += '<span class="disable_efect">' + downPageWord + '</span>'
+        html += '<span class="disable">' + downPageWord + '</span>'
     }
     var pageArea = document.getElementsByName("pageArea");
     var blogPager = document.getElementById("blog-pager");
