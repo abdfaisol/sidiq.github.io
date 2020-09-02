@@ -26,17 +26,17 @@ function loophalaman(banyakdata) {
                 html += '<span>' + upPageWord + '</span></a>'
             }else{
                 if (jenis == "page") {
-                    html += '<a href="' + home_page + '"><span>' + upPageWord + '</span></a>'
+                    html += '<a href="' + home_page + '"  class="soft-arrow"><span>' + upPageWord + '</span></a>'
                 } else {
-                    html += '<a href="/search/label/' + lblname1 + '?max-results=' + postperpage + '"><span>' + upPageWord + '</span></a>'
+                    html += '<a href="/search/label/' + lblname1 + '?max-results=' + postperpage + '"  class="soft-arrow"><span>' + upPageWord + '</span></a>'
                 }  
             }
             
         } else {
             if (jenis == "page") {
-                html += '<a href="#" onclick="redirectpage(' + prevnomer + ');return false"><span>' + upPageWord + '</span></a>'
+                html += '<a href="#" onclick="redirectpage(' + prevnomer + ');return false"  class="soft-arrow"><span>' + upPageWord + '</span></a>'
             } else {
-                html += '<a href="#" onclick="redirectlabel(' + prevnomer + ');return false"><span>' + upPageWord + '</span></a>'
+                html += '<a href="#" onclick="redirectlabel(' + prevnomer + ');return false"  class="soft-arrow"><span>' + upPageWord + '</span></a>'
             }
         }
     }
@@ -74,9 +74,9 @@ function loophalaman(banyakdata) {
     var nextnomer = parseInt(nomerhal) + 1;
     if (nomerhal < maksimal) {
         if (jenis == "page") {
-            html += '<a href="#" onclick="redirectpage(' + nextnomer + ');return false"><span>' + downPageWord + '</span></a>'
+            html += '<a href="#" onclick="redirectpage(' + nextnomer + ');return false"  class="soft-arrow"><span>' + downPageWord + '</span></a>'
         } else {
-            html += '<a href="#" onclick="redirectlabel(' + nextnomer + ');return false"><span>' + downPageWord + '</span></a>'
+            html += '<a href="#" onclick="redirectlabel(' + nextnomer + ');return false"  class="soft-arrow"><span>' + downPageWord + '</span></a>'
         }
     }
     if (nomerhal == maksimal){
