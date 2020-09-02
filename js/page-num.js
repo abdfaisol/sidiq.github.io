@@ -18,7 +18,7 @@ function loophalaman(banyakdata) {
     if (akhir > maksimal) akhir = maksimal;
     var prevnomer = parseInt(nomerhal) - 1;
     if (nomerhal == 1){
-        html += '<span class="disable_efect">' + upPageWord + '</span>'
+        html += '<a id="disabled" class="soft-arrow"><span>' + upPageWord + '</span></a>'
     }
     if (nomerhal > 1) {
         if (nomerhal == 2) {
@@ -49,7 +49,7 @@ function loophalaman(banyakdata) {
     }
     for (var jj = mulai; jj <= akhir; jj++) {
         if (nomerhal == jj) {
-            html += '<span id="disabled">' + jj + '</span>'
+            html += '<a id="disabled" class="soft-arrow"><span>' + jj + '</span></a>'
         } else if (jj == 1) {
             if (jenis == "page") {
                 html += '<a href="' + home_page + '"><span>1</span></a>'
@@ -80,7 +80,7 @@ function loophalaman(banyakdata) {
         }
     }
     if (nomerhal == maksimal){
-        html += '<span class="disable">' + downPageWord + '</span>'
+        html += '<a id="disabled" class="soft-arrow"><span>' + downPageWord + '</span></a>'
     }
     var pageArea = document.getElementsByName("pageArea");
     var blogPager = document.getElementById("blog-pager");
